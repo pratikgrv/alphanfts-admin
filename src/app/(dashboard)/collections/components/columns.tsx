@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import { ColumnDef } from "@tanstack/react-table"
+import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown, MoreHorizontal } from "lucide-react";
 
-import { CellAction } from "./cell-action"
+import { CellAction } from "./cell-action";
 import { Button } from "@/components/ui/button";
 
 export type ProductColumn = {
 	slug: string;
 	name: string;
-  rating: number;
-  featured: boolean;
-  blockchain: string;
+	rating: number;
+	featured: boolean;
+	blockchain: string;
 	mintDate?: string;
 	createdAt?: string;
-}
+};
 export const columns: ColumnDef<ProductColumn>[] = [
 	{
 		accessorKey: "name",
@@ -38,10 +38,7 @@ export const columns: ColumnDef<ProductColumn>[] = [
 		accessorKey: "featured",
 		header: "Featured",
 	},
-	{
-		accessorKey: "mintPrice",
-		header: "Price",
-	},
+	
 	{
 		accessorKey: "mintDate",
 		header: "Mint Date",
