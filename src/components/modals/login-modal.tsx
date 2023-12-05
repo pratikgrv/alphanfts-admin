@@ -35,7 +35,7 @@ const LoginModal = () => {
 	});
 	const router = useRouter();
 	const onSubmit = async (values: z.infer<typeof formSchema>) => {
-		console.log(values);
+		
 		try {
 			const { username, password } = values;
 			setLoading(true);
