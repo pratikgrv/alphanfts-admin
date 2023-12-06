@@ -12,8 +12,8 @@ import "@/styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "zenl admin",
-	description: "the admin dashboard page for ",
+	title: "alphanfts admin",
+	description: "the admin dashboard page for alphanfts",
 };
 
 export default function RootLayout({
